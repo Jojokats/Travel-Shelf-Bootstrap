@@ -4,7 +4,8 @@ body {
 .navbar {
   opacity: 0.9;
   background: #fff;
-  z-index: 100; }
+  z-index: 100;
+  padding: 0.5rem 1rem 0 !important; }
   .navbar .navbar-brand h4 {
     position: relative;
     top: 3px; }
@@ -13,18 +14,24 @@ body {
     padding-right: 15px; }
 
 #showcase {
-  margin-top: -30px;
+  margin-top: -50px;
   position: relative;
-  background: url("../img/annie.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  background: url("../img/annie.jpg") no-repeat center center fixed;
+  width: 100%;
   min-height: 600px;
-  overflow: hidden; }
-  #showcase h1.hero {
-    margin-top: 2rem;
-    font-size: 2rem; }
+  overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  #showcase h1.myhero {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    padding: 0 15px; }
   #showcase p {
-    line-height: 1.4; }
+    line-height: 1.4;
+    padding-left: 20px;
+    padding-right: 20px; }
   #showcase a.read {
     margin-top: 2rem; }
   #showcase .primary-overlay {
@@ -161,20 +168,8 @@ body {
 M E D I A  Q U E R I E S
 ####################################################
 */
-/*
-@media (min-width: 544px) { }
-@media (min-width: 768px) { }
-@media (min-width: 992px) { }
-@media (min-width: 1200px) { }
-
-
-@media (max-width: 575px) { ... }
-@media (max-width: 767px) { ... }
-@media (max-width: 991px) { ... }
-@media (max-width: 1199px) { ... }
-*/
 @media (min-width: 768px) {
-  h1.hero {
+  h1.myhero {
     margin-top: 3.5rem !important;
     font-size: 3rem !important;
     text-align: center !important; }
@@ -187,7 +182,7 @@ M E D I A  Q U E R I E S
     text-align: center; } }
 
 @media (min-width: 992px) {
-  h1.hero {
+  h1.myhero {
     margin-top: 4rem !important;
     font-size: 3.5rem !important;
     text-align: center !important; }
