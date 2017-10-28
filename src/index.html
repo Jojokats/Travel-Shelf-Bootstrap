@@ -7,6 +7,7 @@
   <title>The Travel Shelf</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Ovo" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -43,7 +44,7 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
 	      <div class="input-group">
-		      <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+		      <input type="text" class="form-control search" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
 		  </div>
  		</form>
         </div><!-- /navbar-collapse -->
@@ -55,15 +56,15 @@
 <section id="showcase" class="py-5 text-white">
   <div class="primary-overlay">
     <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-lg-2"></div>
-        <div class="col-md-8 text-center">
-          <h1 class="display-4 pt-5 pb-3 myhero">A Magazine and Index of Beautiful Global Independent Bookstores</h1>
-          <p class="lead">Retro dreaming goals raclette target twee palo santo, VHS schlitz offal XOXO crucifix. Echo park farm-to-table ugh tote bag actually helvetica air plant hexagon listicle tousled vaporware lomo.</p>
+      <div class="row justify-content-center">
 
-          <a href="#" class="btn btn-outline-warning btn-lg read"><i class="fa fa-arrow-right"></i> Read More</a>
-        </div><!-- /col-lg-8 -->
-        <div class="col-lg-2"></div>
+        <div class="col text-center">
+        	<h1 class="display-4 myhero text-center">A Magazine and Index of Beautiful Global Independent Bookstores</h1>
+         	<p class="lead text-center">Retro dreaming goals raclette target twee palo santo, VHS schlitz offal XOXO crucifix. Echo park farm-to-table ugh tote bag actually helvetica air plant hexagon listicle tousled vaporware lomo.</p>
+
+          	<a href="#" class="btn btn-outline-warning btn-lg read"><i class="fa fa-arrow-right"></i> Read More</a>
+
+        </div>
 
       </div><!-- /row -->
     </div><!-- /container -->
@@ -78,6 +79,7 @@
           <div class="col">
             <div class="container leaf">
               <h1 class="mb-4">Welcome To The Travel Shelf</h1>
+              <hr align="center" width="30%">
               <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra sea lettuce broccoli celery lotus root carrot leone bologi rutabaga tigernut.</p>
             </div>
 
@@ -87,71 +89,89 @@
     </Section>
 
 
-    <!-- PHOTO GALLERY -->
-    <section id="gallery">
-      <div class="container-fluid">
-        <h1 class="text-center">Photo Gallery</h1>
-        <p class="text-center">Visit Your Local Bookstores Today!</p>
-        <div class="row no-gutters container-grid">
-          <div class="col-md-4 overlay grey">
-            <a href="#">
-              <img src="img/book6.jpg" class="img-fluid" alt="Book store">
-              <div class="gallery-text">
-				<h3>Bookstore-1</h3>
-			  </div>
-            </a>
-          </div>
-          <div class="col-md-8 overlay grey">
-            <a href="#">
-              <img src="img/book1.jpg" class="img-fluid" alt="Book store">
-             <div class="gallery-text">
-				<h3>Bookstore-2</h3>
-			  </div>
-            </a>
-          </div>
-        </div><!-- /row -->
+	<!-- PORTFOLIO GALLERY -->
+	<section id="portfolio">
+	  <div class="container-fluid">
+	    <h1 class="text-center">Portfolio</h1>
+	    <hr align="center" width="30%">
+	    <p class="text-center header">Visit Your Local Bookstores Today!</p>
+	    <div class="row no-gutters container-grid">
 
-        <div class="row no-gutters container-grid">
-          <div class="col-md-8 overlay grey">
-            <a href="#">
-              <img src="img/book2.jpg" class="img-fluid" alt="Book store">
-              <div class="gallery-text">
-				<h3>Bookstore-3</h3>
-			  </div>
-            </a>
-          </div>
-          <div class="col-md-4 overlay grey">
-            <a href="#">
-              <img src="img/book3.jpg" class="img-fluid" alt="Book store">
-              <div class="gallery-text">
-				<h3>Bookstore-4</h3>
-			  </div>
-            </a>
-          </div>
-        </div><!-- /row -->
+	      <div class="col-md-4 portfolio-item">
+	        <a class="portfolio-link" href="#">
+	          <div class="caption">
+	            <div class="caption-content">
+	              <p> Bookstore 1</p>
+	              <i class="fa fa-search-plus fa-2x"></i>
+	            </div>
+	          </div>
+	          <img src="img/book6.jpg" class="img-fluid" alt="Book store">
+	        </a>
+	      </div>
 
-        <div class="row no-gutters container-grid ">
-          <div class="col-md-4 overlay grey">
-            <a href="#">
-              <img src="img/book12.jpg" class="img-fluid" alt="Book store">
-              <div class="gallery-text">
-				<h3>Bookstore-5</h3>
-			  </div>
-            </a>
-          </div>
-          <div class="col-md-8 overlay grey">
-            <a href="#">
-              <img src="img/book4.jpg" class="img-fluid" alt="Book store" >
+	      <div class="col-md-8 portfolio-item">
+	        <a class="portfolio-link" href="#">
+	          <div class="caption">
+	            <div class="caption-content">
+	              <p> Bookstore 2</p>
+	              <i class="fa fa-search-plus fa-2x"></i>
+	            </div>
+	          </div>
+	          <img src="img/book1.jpg" class="img-fluid" alt="Book store">
+	        </a>
+	      </div>
 
-              <div class="gallery-text">
-				<h3>Bookstore-6</h3>
-			  </div>
-            </a>
-          </div>
-        </div><!-- /row -->
+	      <div class="col-md-8 portfolio-item">
+	        <a class="portfolio-link" href="#">
+	          <div class="caption">
+	            <div class="caption-content">
+	              <p> Bookstore 3</p>
+	              <i class="fa fa-search-plus fa-2x"></i>
+	            </div>
+	          </div>
+	          <img src="img/book2.jpg" class="img-fluid" alt="Book store">
+	        </a>
+	      </div>
 
-      </div><!-- /container -->
-    </section>
+	      <div class="col-md-4 portfolio-item">
+	        <a class="portfolio-link" href="#">
+	          <div class="caption">
+	            <div class="caption-content">
+	              <p> Bookstore 4</p>
+	              <i class="fa fa-search-plus fa-2x"></i>
+	            </div>
+	          </div>
+	          <img src="img/book3.jpg" class="img-fluid" alt="Book store">
+	        </a>
+	      </div>
+
+	      <div class="col-md-4 portfolio-item">
+	        <a class="portfolio-link" href="#">
+	          <div class="caption">
+	            <div class="caption-content">
+	              <p> Bookstore 5</p>
+	              <i class="fa fa-search-plus fa-2x"></i>
+	            </div>
+	          </div>
+	          <img src="img/book12.jpg" class="img-fluid" alt="Book store">
+	        </a>
+	      </div>
+
+	      <div class="col-md-8 portfolio-item">
+	        <a class="portfolio-link" href="#">
+	          <div class="caption">
+	            <div class="caption-content">
+	              <p> Bookstore 6</p>
+	              <i class="fa fa-search-plus fa-2x"></i>
+	            </div>
+	          </div>
+	          <img src="img/book4.jpg" class="img-fluid" alt="Book store">
+	        </a>
+	      </div>
+
+	    </div><!-- /row -->
+	  </div>
+	</section>
 
 
     <!-- INFO SECTION -->
@@ -160,7 +180,8 @@
         <div class="row">
           <div class="col-md-6 align-self-center info-map">
             <h3>Want To Know More?</h3>
-            <p>Get Involved. Nori grape silver beet broccoli kombu beet greens fava bean olive celery carrot potato. </p>
+            <hr align="center" width="30%">
+            <p>Get Involved! Nori grape silver beet broccoli kombu beet greens fava bean olive celery carrot potato. </p>
             <p>Get In Touch:
             	<a href="#" class="email">info@travelshelf.org</a>
             	<br>
@@ -171,7 +192,7 @@
           </div>
 
           <div class="col-md-6 map">
-            <img src="img/map.png" class="img-fluid" alt="Map">
+            <img src="img/world.png" class="img-fluid" alt="Map">
           </div>
         </div><!-- /row -->
       </div><!-- /container -->
