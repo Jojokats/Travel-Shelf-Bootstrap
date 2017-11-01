@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .nav-item {
     font-size: 1rem;
     padding-right: 15px; }
-  .navbar .nav-link, .navbar .search {
+  .navbar .nav-link, .navbar .dropdown-item, .navbar .search {
     font-family: "Muli", sans-serif; }
 
 #showcase {
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   #main-footer .col {
     padding: 30px 0 8px; }
   #main-footer .social {
-    color: #144f7a;
+    color: #ffc107;
     padding-right: 15px;
     -o-transition: color .2s ease-out, background 1s ease-in;
     -ms-transition: color .2s ease-out, background 1s ease-in;
@@ -167,6 +167,160 @@ h1, h2, h3, h4, h5, h6 {
 
 /*
 *******************************
+BLOG
+*******************************
+*/
+.feature-image {
+  display: table;
+  width: 100%; }
+
+#hero-blog {
+  margin-top: -50px;
+  position: relative;
+  background: url("../img/design-bs-blk.jpg") no-repeat 50% 0 fixed;
+  max-width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  #hero-blog h1.myhero {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem; }
+  #hero-blog .primary-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#blog {
+  padding: 50px 0; }
+  #blog .post {
+    position: relative;
+    border: solid 1px #ddd;
+    margin: 40px 0 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    #blog .post header {
+      padding: 40px 20px 20px; }
+      #blog .post header .post-details {
+        font-size: 0.9rem;
+        width: 90%;
+        margin-bottom: 20px; }
+        #blog .post header .post-details i.fa {
+          padding-left: 10px; }
+          #blog .post header .post-details i.fa a {
+            color: #212529;
+            padding-left: 3px; }
+          #blog .post header .post-details i.fa:first-child {
+            padding: 0; }
+    #blog .post .post-excerpt {
+      padding: 20px; }
+      #blog .post .post-excerpt a {
+        color: #f35c5a;
+        text-decoration: none; }
+        #blog .post .post-excerpt a:hover {
+          color: #d44d4b;
+          font-size: 1.1rem;
+          -o-transition: font-size .2s ease-out, color 0.2s ease-in;
+          -ms-transition: font-size .2s ease-out, color 0.2s ease-in;
+          -moz-transition: font-size .2s ease-out, color 0.2s ease-in;
+          -webkit-transition: font-size .2s ease-out, color 0.2s ease-in;
+          transition: font-size .2s ease-out, color 0.2s ease-in; }
+    #blog .post h3 {
+      margin: 0 0 8px;
+      padding: 0 0 15px;
+      border-bottom: solid 1px #ddd; }
+      #blog .post h3 a {
+        color: #212529;
+        text-decoration: none;
+        -o-transition: color .5s ease-out, color 0.5s ease-in;
+        -ms-transition: color .5s ease-out, color 0.5s ease-in;
+        -moz-transition: color .5s ease-out, color 0.5s ease-in;
+        -webkit-transition: color .5s ease-out, color 0.5s ease-in;
+        transition: color .5s ease-out, color 0.5s ease-in; }
+      #blog .post h3 a:hover {
+        color: #f35c5a; }
+    #blog .post .post-comments-badge {
+      height: 70px;
+      width: 70px;
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      border: none;
+      border-radius: 100%;
+      background-color: #f35c5a;
+      text-align: center;
+      display: table; }
+      #blog .post .post-comments-badge a {
+        color: #fff;
+        display: table-cell;
+        vertical-align: middle;
+        font-family: "Muli", sans-serif;
+        font-size: 1.25rem;
+        line-height: 20px;
+        text-decoration: none; }
+        #blog .post .post-comments-badge a i.fa {
+          display: block;
+          font-size: 0.99rem;
+          padding: 0;
+          margin-bottom: 4px; }
+      #blog .post .post-comments-badge:hover {
+        background-color: #d44d4b;
+        transition: background-color 0.5s ease-out; }
+  #blog .widget {
+    position: relative;
+    border: solid 1px #ddd;
+    margin: 40px 0 40px;
+    padding: 30px 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden; }
+    #blog .widget h4 {
+      margin: 0 0 10px;
+      padding: 0 0 10px;
+      border-bottom: solid 1px #ddd; }
+    #blog .widget .input-group-addon {
+      font-family: "Muli", sans-serif;
+      font-weight: 700; }
+    #blog .widget input {
+      font-family: "Muli", sans-serif; }
+    #blog .widget .social a {
+      color: #212529;
+      font-size: 2rem;
+      padding-right: 10px;
+      -o-transition: color .2s ease-out, color 0.3s ease-in;
+      -ms-transition: color .2s ease-out, color 0.3s ease-in;
+      -moz-transition: color .2s ease-out, color 0.3s ease-in;
+      -webkit-transition: color .2s ease-out, color 0.3s ease-in;
+      transition: color .2s ease-out, color 0.3s ease-in; }
+      #blog .widget .social a:hover {
+        color: #f35c5a; }
+    #blog .widget ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      #blog .widget ul li {
+        margin: 0 0 5px; }
+        #blog .widget ul li a {
+          color: #212529;
+          -o-transition: color .2s ease-out, color 0.3s ease-in;
+          -ms-transition: color .2s ease-out, color 0.3s ease-in;
+          -moz-transition: color .2s ease-out, color 0.3s ease-in;
+          -webkit-transition: color .2s ease-out, color 0.3s ease-in;
+          transition: color .2s ease-out, color 0.3s ease-in; }
+          #blog .widget ul li a:hover {
+            color: #f35c5a; }
+
+/*
+*******************************
 M E D I A  Q U E R I E S
 *******************************
 */
@@ -186,7 +340,14 @@ M E D I A  Q U E R I E S
     padding: 100px 0 80px;
     text-align: center; }
   .gallery-text {
-    line-height: 20rem; } }
+    line-height: 20rem; }
+  #hero-blog {
+    min-height: 400px; }
+    #hero-blog h1.myhero {
+      font-size: 3rem;
+      margin-top: 6rem;
+      padding-top: 3.5rem;
+      padding-bottom: 2rem; } }
 
 @media (min-width: 992px) {
   #showcase h1.myhero {
