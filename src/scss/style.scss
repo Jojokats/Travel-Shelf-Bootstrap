@@ -275,7 +275,7 @@ BLOG
   }
 
   .primary-overlay {
-    background: rgba(0, 0, 0 , 0.5);
+    background: rgba(0, 0, 0 , 0.65);
     position: absolute;
     top: 0;
     left: 0;
@@ -304,10 +304,8 @@ BLOG
         width: 90%;
         margin-bottom: 20px;
 
-
         & i.fa {
           padding-left: 10px;
-
 
           & a {
             color: $body-color;
@@ -327,15 +325,15 @@ BLOG
       a {
         color: $accent-color;
         text-decoration: none;
+        -o-transition:color .2s ease-out, color 0.2s ease-in;
+        -ms-transition:color .2s ease-out, color 0.2s ease-in;
+        -moz-transition:color .2s ease-out, color 0.2s ease-in;
+        -webkit-transition:color .2s ease-out, color 0.2s ease-in;
+        transition:color .2s ease-out, color 0.2s ease-in;
 
         &:hover {
-          color:$accent-color-dk;
-          font-size: 1.1rem;
-          -o-transition:font-size .2s ease-out, color 0.2s ease-in;
-          -ms-transition:font-size .2s ease-out, color 0.2s ease-in;
-          -moz-transition:font-size .2s ease-out, color 0.2s ease-in;
-          -webkit-transition:font-size .2s ease-out, color 0.2s ease-in;
-          transition:font-size .2s ease-out, color 0.2s ease-in;
+          color:$body-color;
+          text-decoration: underline;
         }
       }
     }
@@ -524,6 +522,34 @@ BOOKSTORE
 
     .post-excerpt {
       padding: 20px;
+
+      .event-h3 {
+        margin-top: 3rem;
+      }
+
+      .events {
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+      }
+
+      .event-list {
+        font-size: 1.2rem;
+        font-family: $font-family-sans;
+      }
+
+        a {
+        color: $body-color;
+        padding-left: 8px;
+        -o-transition:color .2s ease-out, color 0.3s ease-in;
+        -ms-transition:color .2s ease-out, color 0.3s ease-in;
+        -moz-transition:color .2s ease-out, color 0.3s ease-in;
+        -webkit-transition:color .2s ease-out, color 0.3s ease-in;
+        transition:color .2s ease-out, color 0.3s ease-in;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
     }
 
     h3 {
@@ -572,20 +598,47 @@ BOOKSTORE
       font-family: $font-family-sans;
     }
 
-    .social a {
-      color: $body-color;
-      font-size: 2rem;
-      padding-right: 10px;
-      -o-transition:color .2s ease-out, color 0.3s ease-in;
-      -ms-transition:color .2s ease-out, color 0.3s ease-in;
-      -moz-transition:color .2s ease-out, color 0.3s ease-in;
-      -webkit-transition:color .2s ease-out, color 0.3s ease-in;
-      transition:color .2s ease-out, color 0.3s ease-in;
+    .connect {
+      margin-bottom: 30px;
+    }
 
-      &:hover {
-        color: $accent-color;
+    .address {
+      margin-bottom: 5px;
+      a {
+        color: $body-color;
+        font-family: $font-family-sans;
+        font-size: 1.2rem;
+        -o-transition:color .2s ease-out, color 0.3s ease-in;
+        -ms-transition:color .2s ease-out, color 0.3s ease-in;
+        -moz-transition:color .2s ease-out, color 0.3s ease-in;
+        -webkit-transition:color .2s ease-out, color 0.3s ease-in;
+        transition:color .2s ease-out, color 0.3s ease-in;
+
+        &:hover {
+          color: $accent-color;
+          text-decoration: none;
+        }
       }
     }
+
+    .social {
+      margin-top: 15px;
+      a {
+       color: $body-color;
+       font-size: 2rem;
+       padding-right: 10px;
+       -o-transition:color .2s ease-out, color 0.3s ease-in;
+       -ms-transition:color .2s ease-out, color 0.3s ease-in;
+       -moz-transition:color .2s ease-out, color 0.3s ease-in;
+       -webkit-transition:color .2s ease-out, color 0.3s ease-in;
+       transition:color .2s ease-out, color 0.3s ease-in;
+
+       &:hover {
+         color: $accent-color;
+       }
+     }
+   }// social
+
   }// widget
 
 } // END OF BLOG-BOOSTORE

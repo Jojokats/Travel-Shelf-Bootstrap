@@ -187,7 +187,7 @@ BLOG
     padding-top: 3.5rem;
     padding-bottom: 2rem; }
   #hero-blog .primary-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.65);
     position: absolute;
     top: 0;
     left: 0;
@@ -220,15 +220,15 @@ BLOG
       padding: 20px; }
       #blog .post .post-excerpt a {
         color: #f35c5a;
-        text-decoration: none; }
+        text-decoration: none;
+        -o-transition: color .2s ease-out, color 0.2s ease-in;
+        -ms-transition: color .2s ease-out, color 0.2s ease-in;
+        -moz-transition: color .2s ease-out, color 0.2s ease-in;
+        -webkit-transition: color .2s ease-out, color 0.2s ease-in;
+        transition: color .2s ease-out, color 0.2s ease-in; }
         #blog .post .post-excerpt a:hover {
-          color: #d44d4b;
-          font-size: 1.1rem;
-          -o-transition: font-size .2s ease-out, color 0.2s ease-in;
-          -ms-transition: font-size .2s ease-out, color 0.2s ease-in;
-          -moz-transition: font-size .2s ease-out, color 0.2s ease-in;
-          -webkit-transition: font-size .2s ease-out, color 0.2s ease-in;
-          transition: font-size .2s ease-out, color 0.2s ease-in; }
+          color: #212529;
+          text-decoration: underline; }
     #blog .post h3 {
       margin: 0 0 8px;
       padding: 0 0 15px;
@@ -361,6 +361,24 @@ BOOKSTORE
         margin-bottom: 20px; }
     #blog-bookstore .post .post-excerpt {
       padding: 20px; }
+      #blog-bookstore .post .post-excerpt .event-h3 {
+        margin-top: 3rem; }
+      #blog-bookstore .post .post-excerpt .events {
+        margin-bottom: 30px;
+        font-size: 1.1rem; }
+      #blog-bookstore .post .post-excerpt .event-list {
+        font-size: 1.2rem;
+        font-family: "Muli", sans-serif; }
+      #blog-bookstore .post .post-excerpt a {
+        color: #212529;
+        padding-left: 8px;
+        -o-transition: color .2s ease-out, color 0.3s ease-in;
+        -ms-transition: color .2s ease-out, color 0.3s ease-in;
+        -moz-transition: color .2s ease-out, color 0.3s ease-in;
+        -webkit-transition: color .2s ease-out, color 0.3s ease-in;
+        transition: color .2s ease-out, color 0.3s ease-in; }
+        #blog-bookstore .post .post-excerpt a:hover {
+          color: #f35c5a; }
     #blog-bookstore .post h3 {
       margin: 0 0 8px;
       padding: 0 0 15px;
@@ -393,17 +411,35 @@ BOOKSTORE
       font-weight: 700; }
     #blog-bookstore .widget input {
       font-family: "Muli", sans-serif; }
-    #blog-bookstore .widget .social a {
-      color: #212529;
-      font-size: 2rem;
-      padding-right: 10px;
-      -o-transition: color .2s ease-out, color 0.3s ease-in;
-      -ms-transition: color .2s ease-out, color 0.3s ease-in;
-      -moz-transition: color .2s ease-out, color 0.3s ease-in;
-      -webkit-transition: color .2s ease-out, color 0.3s ease-in;
-      transition: color .2s ease-out, color 0.3s ease-in; }
-      #blog-bookstore .widget .social a:hover {
-        color: #f35c5a; }
+    #blog-bookstore .widget .connect {
+      margin-bottom: 30px; }
+    #blog-bookstore .widget .address {
+      margin-bottom: 5px; }
+      #blog-bookstore .widget .address a {
+        color: #212529;
+        font-family: "Muli", sans-serif;
+        font-size: 1.2rem;
+        -o-transition: color .2s ease-out, color 0.3s ease-in;
+        -ms-transition: color .2s ease-out, color 0.3s ease-in;
+        -moz-transition: color .2s ease-out, color 0.3s ease-in;
+        -webkit-transition: color .2s ease-out, color 0.3s ease-in;
+        transition: color .2s ease-out, color 0.3s ease-in; }
+        #blog-bookstore .widget .address a:hover {
+          color: #f35c5a;
+          text-decoration: none; }
+    #blog-bookstore .widget .social {
+      margin-top: 15px; }
+      #blog-bookstore .widget .social a {
+        color: #212529;
+        font-size: 2rem;
+        padding-right: 10px;
+        -o-transition: color .2s ease-out, color 0.3s ease-in;
+        -ms-transition: color .2s ease-out, color 0.3s ease-in;
+        -moz-transition: color .2s ease-out, color 0.3s ease-in;
+        -webkit-transition: color .2s ease-out, color 0.3s ease-in;
+        transition: color .2s ease-out, color 0.3s ease-in; }
+        #blog-bookstore .widget .social a:hover {
+          color: #f35c5a; }
 
 /*
 *******************************
