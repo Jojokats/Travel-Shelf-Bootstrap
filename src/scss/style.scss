@@ -514,12 +514,25 @@ BOOKSTORE
     & header {
       padding: 40px 20px 20px;
 
-      .post-details {
-        font-size: 0.9rem;
-        width: 90%;
-        margin-bottom: 20px;
+      h3 {
+        margin: 0 0 8px;
+        padding: 0 0 15px;
+        border-bottom: solid 1px #ddd;
 
-      } // post-details
+        & a {
+          color: $body-color;
+          text-decoration: none;
+          -o-transition:color .5s ease-out, color 0.5s ease-in;
+          -ms-transition:color .5s ease-out, color 0.5s ease-in;
+          -moz-transition:color .5s ease-out, color 0.5s ease-in;
+          -webkit-transition:color .5s ease-out, color 0.5s ease-in;
+          transition:color .5s ease-out, color 0.5s ease-in;
+        }
+
+        & a:hover {
+          color: $accent-lg-blue;
+        }
+      } // h3
     } // header
 
     .post-excerpt {
@@ -560,25 +573,6 @@ BOOKSTORE
       }
     }
 
-    h3 {
-      margin: 0 0 8px;
-      padding: 0 0 15px;
-      border-bottom: solid 1px #ddd;
-
-      & a {
-        color: $accent-lg-blue;
-        text-decoration: none;
-        -o-transition:color .5s ease-out, color 0.5s ease-in;
-        -ms-transition:color .5s ease-out, color 0.5s ease-in;
-        -moz-transition:color .5s ease-out, color 0.5s ease-in;
-        -webkit-transition:color .5s ease-out, color 0.5s ease-in;
-        transition:color .5s ease-out, color 0.5s ease-in;
-      }
-
-      & a:hover {
-        color: $body-color;
-      }
-    } // h3
   } // post
 
   //SIDEBAR

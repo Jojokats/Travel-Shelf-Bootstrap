@@ -355,10 +355,20 @@ BOOKSTORE
     border-radius: 4px; }
     #blog-bookstore .post header {
       padding: 40px 20px 20px; }
-      #blog-bookstore .post header .post-details {
-        font-size: 0.9rem;
-        width: 90%;
-        margin-bottom: 20px; }
+      #blog-bookstore .post header h3 {
+        margin: 0 0 8px;
+        padding: 0 0 15px;
+        border-bottom: solid 1px #ddd; }
+        #blog-bookstore .post header h3 a {
+          color: #212529;
+          text-decoration: none;
+          -o-transition: color .5s ease-out, color 0.5s ease-in;
+          -ms-transition: color .5s ease-out, color 0.5s ease-in;
+          -moz-transition: color .5s ease-out, color 0.5s ease-in;
+          -webkit-transition: color .5s ease-out, color 0.5s ease-in;
+          transition: color .5s ease-out, color 0.5s ease-in; }
+        #blog-bookstore .post header h3 a:hover {
+          color: #449DD1; }
     #blog-bookstore .post .post-excerpt {
       padding: 20px; }
       #blog-bookstore .post .post-excerpt .learn-more a:hover {
@@ -381,20 +391,6 @@ BOOKSTORE
         transition: color .2s ease-out, color 0.3s ease-in; }
         #blog-bookstore .post .post-excerpt a.listing:hover {
           color: #212529; }
-    #blog-bookstore .post h3 {
-      margin: 0 0 8px;
-      padding: 0 0 15px;
-      border-bottom: solid 1px #ddd; }
-      #blog-bookstore .post h3 a {
-        color: #449DD1;
-        text-decoration: none;
-        -o-transition: color .5s ease-out, color 0.5s ease-in;
-        -ms-transition: color .5s ease-out, color 0.5s ease-in;
-        -moz-transition: color .5s ease-out, color 0.5s ease-in;
-        -webkit-transition: color .5s ease-out, color 0.5s ease-in;
-        transition: color .5s ease-out, color 0.5s ease-in; }
-      #blog-bookstore .post h3 a:hover {
-        color: #212529; }
   #blog-bookstore .widget {
     position: relative;
     border: solid 1px #ddd;
