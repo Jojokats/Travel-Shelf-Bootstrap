@@ -8,6 +8,8 @@ $yellow: #ffc107;
 $body-color: #212529;
 $accent-color: #f35c5a;
 $accent-color-dk: #d44d4b;
+$accent-blue: #044f7a;
+$accent-lg-blue: #449DD1;
 
 
 
@@ -335,7 +337,7 @@ BLOG
           color:$body-color;
           text-decoration: underline;
         }
-      }
+      }// end a tag
     }
 
     h3 {
@@ -523,6 +525,12 @@ BOOKSTORE
     .post-excerpt {
       padding: 20px;
 
+      .learn-more {
+        a:hover {
+          color:#fff;
+        }
+      }
+
       .event-h3 {
         margin-top: 3rem;
       }
@@ -537,8 +545,8 @@ BOOKSTORE
         font-family: $font-family-sans;
       }
 
-        a {
-        color: $body-color;
+        a.listing {
+        color: $accent-lg-blue;
         padding-left: 8px;
         -o-transition:color .2s ease-out, color 0.3s ease-in;
         -ms-transition:color .2s ease-out, color 0.3s ease-in;
@@ -547,7 +555,7 @@ BOOKSTORE
         transition:color .2s ease-out, color 0.3s ease-in;
 
         &:hover {
-          color: $accent-color;
+          color: $body-color;
         }
       }
     }
@@ -556,8 +564,9 @@ BOOKSTORE
       margin: 0 0 8px;
       padding: 0 0 15px;
       border-bottom: solid 1px #ddd;
+
       & a {
-        color: $body-color;
+        color: $accent-lg-blue;
         text-decoration: none;
         -o-transition:color .5s ease-out, color 0.5s ease-in;
         -ms-transition:color .5s ease-out, color 0.5s ease-in;
@@ -567,7 +576,7 @@ BOOKSTORE
       }
 
       & a:hover {
-        color: $accent-color;
+        color: $body-color;
       }
     } // h3
   } // post
@@ -605,7 +614,7 @@ BOOKSTORE
     .address {
       margin-bottom: 5px;
       a {
-        color: $body-color;
+        color: $accent-lg-blue;
         font-family: $font-family-sans;
         font-size: 1.2rem;
         -o-transition:color .2s ease-out, color 0.3s ease-in;
@@ -615,7 +624,7 @@ BOOKSTORE
         transition:color .2s ease-out, color 0.3s ease-in;
 
         &:hover {
-          color: $accent-color;
+          color: $body-color;
           text-decoration: none;
         }
       }
