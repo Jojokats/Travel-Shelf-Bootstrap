@@ -374,7 +374,9 @@ BOOKSTORE
       #blog-bookstore .post .post-excerpt .learn-more a:hover {
         color: #fff; }
       #blog-bookstore .post .post-excerpt .event-h3 {
-        margin-top: 3rem; }
+        margin-top: 3rem;
+        padding: 0 0 15px;
+        border-bottom: solid 1px #ddd; }
       #blog-bookstore .post .post-excerpt .events {
         margin-bottom: 30px;
         font-size: 1.1rem; }
