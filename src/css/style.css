@@ -122,7 +122,6 @@ h1, h2, h3, h4, h5, h6 {
   #info .info-map .go {
     font-family: "Muli", sans-serif;
     font-weight: 700; }
-
 #info .map {
   padding: 30px 0 80px;
   text-align: center; }
@@ -187,19 +186,24 @@ M E D I A  Q U E R I E S
     font-size: 3rem !important; }
   #showcase p {
     padding: 0 2.5rem 2rem; }
+
   #home-heading p {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 1.2rem; }
+
   a.read {
     margin-top: 3rem; }
+
   #info .info-map {
     padding: 100px 0 100px; }
   #info .map {
     padding: 100px 0 80px;
     text-align: center; }
+
   .gallery-text {
     line-height: 20rem; }
+
   #hero-blog {
     min-height: 400px; }
     #hero-blog h1.myhero {
@@ -207,13 +211,13 @@ M E D I A  Q U E R I E S
       margin-top: 6rem;
       padding-top: 3.5rem;
       padding-bottom: 2rem; }
+
   #hero-bookstore {
     min-height: 500px; }
     #hero-bookstore h1.myhero {
       font-size: 3.5rem;
       margin-top: 9rem;
       padding-top: 3.5rem; } }
-
 @media (min-width: 992px) {
   #showcase h1.myhero {
     margin-top: 4rem !important;
@@ -223,14 +227,16 @@ M E D I A  Q U E R I E S
   #showcase p {
     padding-right: 12rem;
     padding-left: 12rem; }
+
   #home-heading p {
     padding-left: 150px;
     padding-right: 150px; }
+
   .gallery-text {
     line-height: 25rem; }
+
   .mygrid {
     transform: translateY(80px); } }
-
 #hero-bookstore {
   margin-top: -50px;
   position: relative;
@@ -331,10 +337,13 @@ M E D I A  Q U E R I E S
       margin: 0 0 10px;
       padding: 0 0 10px;
       border-bottom: solid 1px #ddd; }
+    #blog-bookstore .widget .theInput {
+      padding-left: 20px !important;
+      padding-right: 10px !important; }
     #blog-bookstore .widget .input-group-addon {
       font-family: "Muli", sans-serif;
       font-weight: 700; }
-    #blog-bookstore .widget input {
+    #blog-bookstore .widget input.form-control {
       font-family: "Muli", sans-serif; }
     #blog-bookstore .widget .connect {
       margin-bottom: 30px; }
@@ -368,13 +377,138 @@ M E D I A  Q U E R I E S
 
 /*
 *******************************
-BLOG
+M E D I A  Q U E R I E S
 *******************************
 */
-#hero-blog {
+@media (min-width: 768px) {
+  #blog-bookstore .widget .theInput {
+    padding-right: 18px !important;
+    font-size: 0.9rem !important; }
+  #blog-bookstore .widget .input-group-addon {
+    display: none; } }
+@media (min-width: 992px) {
+  #blog-bookstore .widget .input-group-addon {
+    display: block; } }
+#about-bookstore {
   margin-top: -50px;
   position: relative;
-  background: url("../img/design-bs-blk.jpg") no-repeat 50% 0 fixed;
+  background: url("../img/bs-night-lg-2.jpg") no-repeat 65% 0 fixed;
+  max-width: 100%;
+  min-height: 360px;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  #about-bookstore h1.myhero {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem; }
+  #about-bookstore .primary-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#about {
+  position: relative;
+  min-height: 350px;
+  padding: 100px 0 100px;
+  background-color: rgba(0, 0, 0, 0.05); }
+  #about .description span {
+    font-family: "Muli", sans-serif;
+    font-weight: 700; }
+  #about .description, #about p {
+    font-size: 1.1rem; }
+  #about a.info {
+    color: #17a2b8;
+    -o-transition: color .5s ease-out, color 0.5s ease-in;
+    -ms-transition: color .5s ease-out, color 0.5s ease-in;
+    -moz-transition: color .5s ease-out, color 0.5s ease-in;
+    -webkit-transition: color .5s ease-out, color 0.5s ease-in;
+    transition: color .5s ease-out, color 0.5s ease-in; }
+    #about a.info:hover {
+      color: #212529;
+      text-decoration: underline; }
+  #about .developer .richard {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 40px;
+    margin-top: 40px; }
+  #about .developer .icons .fa {
+    color: #212529;
+    padding-right: 8px;
+    margin-top: 5px;
+    -o-transition: color .5s ease-out, color 0.5s ease-in;
+    -ms-transition: color .5s ease-out, color 0.5s ease-in;
+    -moz-transition: color .5s ease-out, color 0.5s ease-in;
+    -webkit-transition: color .5s ease-out, color 0.5s ease-in;
+    transition: color .5s ease-out, color 0.5s ease-in; }
+    #about .developer .icons .fa:hover {
+      color: #17a2b8; }
+
+#team {
+  padding: 100px 0 55px; }
+  #team .webdeveloper {
+    margin-bottom: 80px; }
+    #team .webdeveloper .avatar {
+      width: 45%;
+      height: 45%;
+      margin-bottom: 40px; }
+    #team .webdeveloper .bio {
+      padding: 0 45px;
+      font-size: 1.1rem; }
+    #team .webdeveloper .icons .fa {
+      color: #212529;
+      padding-right: 8px;
+      -o-transition: color .5s ease-out, color 0.5s ease-in;
+      -ms-transition: color .5s ease-out, color 0.5s ease-in;
+      -moz-transition: color .5s ease-out, color 0.5s ease-in;
+      -webkit-transition: color .5s ease-out, color 0.5s ease-in;
+      transition: color .5s ease-out, color 0.5s ease-in; }
+      #team .webdeveloper .icons .fa:hover {
+        color: #17a2b8; }
+
+/*
+*******************************
+M E D I A  Q U E R I E S
+*******************************
+*/
+@media (min-width: 576px) {
+  #about {
+    padding-bottom: 85px; }
+    #about .developer .richard {
+      margin-top: 30px; }
+
+  #team .webdeveloper .avatar {
+    width: 50%;
+    height: 50%; } }
+@media (min-width: 768px) {
+  #about {
+    padding-bottom: 80px; }
+    #about .developer .richard {
+      margin-top: 0px; }
+
+  #team {
+    padding: 130px 0 45px; }
+    #team .webdeveloper .avatar {
+      width: 70%;
+      height: 70%; }
+    #team .webdeveloper .bio {
+      padding: 0 10px; } }
+@media (min-width: 992px) {
+  #about {
+    padding-top: 120px;
+    padding-bottom: 70px; }
+    #about .first {
+      margin-bottom: 50px; } }
+#contact {
+  margin-top: -50px;
+  position: relative;
+  background: url("../img/booksign-md.jpg") no-repeat 50% 0 fixed;
   max-width: 100%;
   min-height: 300px;
   overflow: hidden;
@@ -382,136 +516,50 @@ BLOG
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
-  #hero-blog h1.myhero {
+  #contact h1.myhero {
     font-size: 2.5rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     padding-top: 3.5rem;
-    padding-bottom: 2rem; }
-  #hero-blog .primary-overlay {
-    background: rgba(0, 0, 0, 0.65);
+    padding-bottom: 2rem;
+    letter-spacing: 3px; }
+  #contact .primary-overlay {
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
 
-#blog {
-  padding: 50px 0; }
-  #blog .post {
-    position: relative;
-    border: solid 1px #ddd;
-    margin: 40px 0 40px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px; }
-    #blog .post header {
-      padding: 40px 20px 20px; }
-      #blog .post header .post-details {
-        font-size: 0.9rem;
-        width: 90%;
-        margin-bottom: 20px; }
-        #blog .post header .post-details i.fa {
-          padding-left: 10px; }
-          #blog .post header .post-details i.fa a {
-            color: #212529;
-            padding-left: 3px; }
-          #blog .post header .post-details i.fa:first-child {
-            padding: 0; }
-    #blog .post .post-excerpt {
-      padding: 20px; }
-      #blog .post .post-excerpt a {
-        color: #f35c5a;
-        text-decoration: none;
-        -o-transition: color .2s ease-out, color 0.2s ease-in;
-        -ms-transition: color .2s ease-out, color 0.2s ease-in;
-        -moz-transition: color .2s ease-out, color 0.2s ease-in;
-        -webkit-transition: color .2s ease-out, color 0.2s ease-in;
-        transition: color .2s ease-out, color 0.2s ease-in; }
-        #blog .post .post-excerpt a:hover {
-          color: #212529;
-          text-decoration: underline; }
-    #blog .post h3 {
-      margin: 0 0 8px;
-      padding: 0 0 15px;
-      border-bottom: solid 1px #ddd; }
-      #blog .post h3 a {
-        color: #212529;
-        text-decoration: none;
-        -o-transition: color .5s ease-out, color 0.5s ease-in;
-        -ms-transition: color .5s ease-out, color 0.5s ease-in;
-        -moz-transition: color .5s ease-out, color 0.5s ease-in;
-        -webkit-transition: color .5s ease-out, color 0.5s ease-in;
-        transition: color .5s ease-out, color 0.5s ease-in; }
-      #blog .post h3 a:hover {
-        color: #f35c5a; }
-    #blog .post .post-comments-badge {
-      height: 70px;
-      width: 70px;
-      position: absolute;
-      top: 25px;
-      right: 20px;
-      border: none;
-      border-radius: 100%;
-      background-color: #f35c5a;
-      text-align: center;
-      display: table; }
-      #blog .post .post-comments-badge a {
-        color: #fff;
-        display: table-cell;
-        vertical-align: middle;
-        font-family: "Muli", sans-serif;
-        font-size: 1.25rem;
-        line-height: 20px;
-        text-decoration: none; }
-        #blog .post .post-comments-badge a i.fa {
-          display: block;
-          font-size: 0.99rem;
-          padding: 0;
-          margin-bottom: 4px; }
-      #blog .post .post-comments-badge:hover {
-        background-color: #d44d4b;
-        transition: background-color 0.5s ease-out; }
-  #blog .widget {
-    position: relative;
-    border: solid 1px #ddd;
-    margin: 40px 0 40px;
-    padding: 30px 20px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    overflow: hidden; }
-    #blog .widget h4 {
-      margin: 0 0 10px;
-      padding: 0 0 10px;
-      border-bottom: solid 1px #ddd; }
-    #blog .widget .input-group-addon {
-      font-family: "Muli", sans-serif;
-      font-weight: 700; }
-    #blog .widget input {
-      font-family: "Muli", sans-serif; }
-    #blog .widget .social a {
+#contact-us {
+  position: relative;
+  min-height: 350px;
+  padding: 100px 0 100px;
+  background-color: rgba(0, 0, 0, 0.05); }
+  #contact-us .description span {
+    font-family: "Muli", sans-serif;
+    font-weight: 700; }
+  #contact-us .description, #contact-us p {
+    font-size: 1.1rem; }
+  #contact-us a.info {
+    color: #17a2b8; }
+    #contact-us a.info:hover {
       color: #212529;
-      font-size: 2rem;
-      padding-right: 10px;
-      -o-transition: color .2s ease-out, color 0.3s ease-in;
-      -ms-transition: color .2s ease-out, color 0.3s ease-in;
-      -moz-transition: color .2s ease-out, color 0.3s ease-in;
-      -webkit-transition: color .2s ease-out, color 0.3s ease-in;
-      transition: color .2s ease-out, color 0.3s ease-in; }
-      #blog .widget .social a:hover {
-        color: #f35c5a; }
-    #blog .widget ul {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      #blog .widget ul li {
-        margin: 0 0 5px; }
-        #blog .widget ul li a {
-          color: #212529;
-          -o-transition: color .2s ease-out, color 0.3s ease-in;
-          -ms-transition: color .2s ease-out, color 0.3s ease-in;
-          -moz-transition: color .2s ease-out, color 0.3s ease-in;
-          -webkit-transition: color .2s ease-out, color 0.3s ease-in;
-          transition: color .2s ease-out, color 0.3s ease-in; }
-          #blog .widget ul li a:hover {
-            color: #f35c5a; }
+      text-decoration: underline;
+      -o-transition: color .5s ease-out, color 0.5s ease-in;
+      -ms-transition: color .5s ease-out, color 0.5s ease-in;
+      -moz-transition: color .5s ease-out, color 0.5s ease-in;
+      -webkit-transition: color .5s ease-out, color 0.5s ease-in;
+      transition: color .5s ease-out, color 0.5s ease-in; }
+  #contact-us .developer .richard {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 40px;
+    margin-top: 40px; }
+  #contact-us .developer .icons .fa {
+    color: #212529;
+    padding-right: 8px;
+    margin-top: 5px; }
+    #contact-us .developer .icons .fa:hover {
+      color: #17a2b8; }
+
+/*# sourceMappingURL=style.css.map */
